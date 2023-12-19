@@ -3,6 +3,10 @@
     --nav-color:  #138D75    ;
     --bg-color: #e8f3f1;
     --black: #2f4858;
+    --card-color: #D0ECE7;
+    --border: .1rem solid var(--card-color);
+    --box-shadow: 0 0 10px var(--nav-color)
+
 }
 *{
     margin: 0;
@@ -17,10 +21,13 @@
 }
 html{
     font-size: 62.5%;
-    overflow: hidden;
 }
 body{
     background-color: var(--bg-color);
+
+}
+section {
+    padding: 2rem 7%;
 }
 .btn {
     display: inline-block;
@@ -34,6 +41,13 @@ body{
 }
 .btn:hover {
     letter-spacing: 0.1rem;
+}
+.title {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    font-size: 4rem;
 }
 .header{
     background-color: var(--nav-color);
@@ -165,7 +179,7 @@ body{
 .home {
     display: flex;
     align-items: center;
-    min-height: 65vh;
+    min-height: 84vh;
     margin-top: 16vh;
     background-color: aqua;
     background-image: url("images/bg2.jpg");
@@ -188,31 +202,32 @@ body{
     padding: 1rem 0;
     color: black;
 }
+/* cakes section */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.cakes .wrapper .cake-card {
+    background-color: var(--card-color);
+    padding: 3rem 2rem;
+    align-items: center;
+    transform-origin: top center;
+}
+.cakes .wrapper .cake-card:hover {
+    box-shadow: var(--box-shadow);;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cakes .wrapper .cake-card img {
+    width: 100%;
+}
+.cakes .wrapper .cake-card h3 {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.cakes .wrapper .cake-card .price {
+    color: black;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+}
