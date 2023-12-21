@@ -231,3 +231,45 @@ section {
     font-size: 1.6rem;
     padding: 0.5rem 0;
 }
+/* cheesecakes section */
+.cheese-cakes .wrapper .cheese-card {
+    text-align: center;
+    background-color:var(--card-color);
+    padding: 3rem 2rem;
+    transform-origin: top center;
+}
+.cheese-cakes .wrapper .cheese-card:hover {
+    box-shadow: var(--box-shadow);
+}
+.cheese-cakes .wrapper .cheese-card .icons a {
+    border: var(--border);
+    height: 5rem;
+    width: 5rem;
+    color: black;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin: 0.3rem;
+}
+.cheese-cakes .wrapper .cheese-card .icons a:hover {
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+.cheese-cakes .wrapper .cheese-card img {
+    width: 100%;
+}
+.cheese-cakes .wrapper .cheese-card h3 {
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.cheese-cakes .wrapper .cheese-card .content .stars {
+    padding: 1.8rem;
+}
+.cheese-cakes .wrapper .cheese-card .content .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+.cheese-cakes .wrapper .cheese-card .price {
+    color: black;
+    font-size: 1.8rem;
+}
