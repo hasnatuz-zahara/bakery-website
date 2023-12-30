@@ -18,6 +18,8 @@
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all 0.5s ease-in;
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
 }
 html{
     font-size: 62.5%;
@@ -337,10 +339,45 @@ section {
     line-height: 2.2rem;
 }
 
+/* review section */
 
-
-
-
+.review .wrapper .review-card {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.review .wrapper .review-card img {
+    height: 4rem;
+}
+.review .wrapper .review-card p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: gray;
+    padding: 2rem 0;
+}
+.review .wrapper .review-card:hover p {
+    color: var(--black);
+}
+.review .wrapper .review-card .customer {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review .wrapper .review-card:hover .customer {
+    transform: scale(1.1);
+}
+.review .wrapper .review-card h3 {
+    padding: 1rem 0rem;
+    font-size: 2rem;
+    color: black;
+    text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), -2px -2px 0 var(--card-color), 2px 2px 0 var(--card-color);
+}
+.review .wrapper .review-card .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding: 0.8rem 0;
+}
 
 
 
